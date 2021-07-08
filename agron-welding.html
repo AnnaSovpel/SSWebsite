@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bushing.css">
+    <title>Мобильная, аргонная сварка</title>
+</head>
+<header class="header-section">
+    <div class="header-section-margin">
+        <a href="./index.html" class="header-nav">Главная</a>
+        <div class="header-nav">Услуги</div>
+        <div class="header-nav">Акции</div>
+        <div class="header-nav">Цены</div>
+        <div class="header-nav">Контакты</div>
+        <div><img src="./img/sound.png" alt="No image" class="header-img"></div>
+    </div>
+</header>
+<div class="burger">
+    <span></span>
+    <div class="burger-container">
+        <div class="burger-cotainer-block burger-cotainer-block-table">
+            <a href="./index.html">Главная</a>
+            <a href="#">Услуги</a>
+            <a href="#">Акции</a>
+            <a href="#">Цены</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="main-background">
+        <div class="main-opacity">
+            <div class="footer-section">
+                <div class="footer-section-phone">
+                    <a href="375257777702" class="footer-section-phone-a__padding">+375 (25) 777-77-02 (MTS)</a>
+                    <a href="375445876383 ">+375 (44) 587-63-83 (А1)</a>
+                </div>
+                <div class="footer-section-phone-phone__padding">г.Гомель, пр-т Октября, 23А (круглосуточно)</div>
+            </div>
+        </div>
+        <!-- СЕКЦИЯ С КРУГОМ -->
+        <div class="circle-section">
+            <div class="circle-section-flex">
+
+                <div class="circle-section-background">
+
+                    <div class="wheel-1 wheel-1-argon"></div>
+                    <div class="wheel-2 wheel-2-argon"></div>
+                    <div class="wheel-3 wheel-3-argon"></div>
+
+                    <div class="circle-section-background-text-position">
+                        <div class="circle-section-background-text-item">МОБИЛЬНАЯ<br>
+                            АРГОННАЯ СВАРКА</div>
+                        <div class="circle-section-background-text">
+                            <span>м</span>ы предлагаем аргонную сварку для:
+                            <li>литых дисков</li>
+                            <li>велосипедных рам</li>
+                            <li>подднов</li>
+                            <li>кронштейнов</li>
+                            <li>акпп</li>
+                            <li>кпп и многое другое</li>
+                        </div>
+                        <div class="circle-section-background-text"> <span>м</span>ожем приехать и произвести ремонт с
+                            помощью аргонной сварки различных деталей автомобиля.</div>
+                        <button class="header-button-call" id="btn_modal_window">Записаться</button>
+                        <div id="my_modal" class="modal">
+                            <div class="modal_content">
+                                <span class="close_modal_window">×</span>
+                                <form class="popup__form down" id="form" action="mail.php" method="POST">
+                                    <div class="order">
+                                        <div class="modal-text-item">Остались вопросы?</div>
+                                        <div class="modal-text">Закажите обратный звонок, и наш консультант свяжется с
+                                            вами</div>
+                                        <form method="post" action="mail.php">
+                                            <!-- <div data-title="Например, Мария Петровна">Ваше имя: <input type='text' name='name'
+                                                                required /></div> -->
+                                            <div class="phone-flex-container">
+                                                <input class="phone-input tel" type="tel" name='tel' placeholder="+375"
+                                                    required />
+                                                <input class="phone-input-call" type='submit' class="request"
+                                                    value='Заказать звонок'>
+                                            </div>
+                                            <div id="text"></div>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="result_form"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class=" footer-section">
+            <div class="footer-section-phone">
+                <a href="375257777702" class="footer-section-phone-a__padding">+375 (25) 777-77-02 (MTS)</a>
+                <a href="375445876383 ">+375 (44) 587-63-83 (А1)</a>
+            </div>
+            <div class="footer-section-phone-phone__padding">г.Гомель, пр-т Октября, 23А (круглосуточно)
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./bushing.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+/* THIS IS CSS FOR PAGES: BUSHING, ARGON-WELDING, UNSCREWING SECRETS*/
+.circle-section {
+    height: 90vh; 
+    background: rgba(255, 255, 255, 0.2);
+}
+.circle-section-background {
+    background-image: url(./img/services/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 900px;
+}
+.circle-section-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.wheel-1 {
+    background-image: url(./img/services/wheel-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:320px;
+    width: 320px;
+    position: relative;
+    left: 480px;
+    top: -40px;
+}
+.wheel-1-argon {
+    background-image: url(./img/services/wheel-1-argon.png);
+}
+.wheel-1-secrets {
+    background-image: url(./img/services/wheel-1-secrets.png);
+}
+.wheel-2 {
+    background-image: url(./img/services/wheel-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:320px;
+    width: 320px;
+    position: relative;
+    left: 700px;
+    bottom: 50px;
+}
+.wheel-2-argon {
+    background-image: url(./img/services/wheel-2-argon.png);
+}
+.wheel-2-secrets {
+    background-image: url(./img/services/wheel-2-secrets.png);
+}
+.wheel-3 {
+    background-image: url(./img/services/wheel-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:440px;
+    width: 440px;
+    position: relative;
+    left: 480px;
+    bottom: 80px;
+}
+.wheel-3-argon {
+    background-image: url(./img/services/wheel-3-argon.png);
+}
+.wheel-3-secrets {
+    background-image: url(./img/services/wheel-3-secrets.png);
+}
+.circle-section-background-text-position {
+    position: relative; 
+    bottom: 850px;
+}
+.circle-section-background-text-item {
+    padding-left: 140px;
+    font-family: Intro Rust;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.circle-section-background-text {
+    padding: 25px 0 0 140px;
+    font-family: Noto Sans;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 60%;
+}
+.circle-section-background-text > span {
+    text-transform: uppercase;
+}
+button {
+    margin: 25px 0 0 140px;
+    width: 210px;
+    height: 60px;
+    background: #FF5416;
+    border-radius: 4px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background: #ff5416cd;
+}
+/* MODAL WINDOW  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.modal .modal_content {
+    margin: 15% auto;
+    padding: 30px 30px 40px 30px;
+    background-color: white;
+    border: 1px solid #888;
+    width: 75%;
+    z-index: 3;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-contact-1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-contact-3 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-delivery {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal .modal_content .close_modal_window-delivery-1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-text-item {   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+}
+.modal-text {   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;  
+    text-align: center;
+    color: #000000;
+}
+
+.phone-input {
+    padding-left: 20px;
+    width: 40%;
+    background: rgba(121, 121, 121, 0.282);
+    border-radius: 2px; 
+    color: #000000;
+    border: none;
+    font-size: 20px;
+    line-height: 27px;
+}
+.phone-input::-webkit-input-placeholder {
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000; 
+    opacity: 0.5;
+}
+.phone-flex-container {
+    display: flex; 
+    justify-content: center;
+    padding-top: 41px;
+}
+.phone-input-call {
+    margin-left: 12px;
+    background: #FF5416;
+    border-radius: 2px;
+    height: 59px;
+    width: 30%;
+    color: #FFFFFF;
+    line-height: 27px;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+}
+.phone-input-call:hover {
+    background: #ff5416cd;
+}
+#text {
+    padding-right: 59px;
+    color: red;
+    width: 70%;
+    text-align: center;
+}
+
+@media (max-width: 1480px){
+    .circle-section-background {
+        height: 500px;
+        width: 500px;
+    }   
+    .wheel-1 {
+        width: 150px;
+        height: 150px;
+        left: 290px;
+    }
+    .wheel-2 {
+        width: 150px;
+        height: 150px;
+        left: 390px;
+    }
+    .wheel-3 {
+        width: 220px;
+        height: 220px;
+        left: 330px;
+        top: -55px;
+    }
+    .circle-section-background-text-position {
+        position: relative; 
+        bottom: 420px;
+    }
+    .circle-section-background-text-item {
+        padding-left: 100px;
+        font-size: 20px;
+    }
+    .circle-section-background-text {
+        padding-left: 100px;
+        font-size: 12px;    
+    }
+    button {
+        margin: 10px 0 0 100px;
+        width: 150px;
+        height: 50px;
+    }
+}
+@media (max-width: 860px){
+    .phone-input-call {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .phone-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-form-icon {
+        display: none;
+    }
+    .phone-input {
+        width: 90%;
+        height: 59px;
+        margin-bottom: 10px;
+    }
+    .phone-input-call {
+        width: 50%;
+    }
+    #text {
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .circle-section-background {
+        height: 400px;
+        width: 400px;
+    }
+    .wheel-1 {
+        left: 250px;
+    }
+    .wheel-2 {
+        left: 320px;
+    }
+    .wheel-3 {
+        left: 250px;
+        top: -75px;
+    }
+    .circle-section-background {
+         background: rgba(255, 255, 255, 0);
+    }
+    .wheel-1 {
+        display: none;
+    }
+    .wheel-2 {
+        display: none;
+    }
+    .wheel-3 {
+        display: none;
+    }
+    .circle-section-background-text-position {
+        bottom: 0px;
+    }
+    .circle-section-background-text-item {
+        padding: 0;
+        font-size: 25px;
+        color: black;
+        width: 100%;
+    }
+    .circle-section-background-text {
+        padding: 0;
+        font-size: 18px;
+        width: 100%;
+        color: black;
+    }
+    button {
+        margin: 25px 0;
+    }
+}
+@media (max-width: 550px){
+    .circle-section-background {
+        height: 300px;
+        width: 300px;
+    }
+    .wheel-1 {
+        width: 120px;
+        height: 120px;
+        left: 180px;
+    }
+    .wheel-2 {
+        width: 120px;
+        height: 120px;
+        left: 230px;
+    }
+    .wheel-3 {
+        width: 180px;
+        height: 180px;
+        left: 150px;
+        top: -80px;
+    }
+    .circle-section-background-text-position {
+        bottom: 120px;
+    }
+    .circle-section-background-text-item {
+        font-size: 25px;
+    }
+    .circle-section-background-text {
+        font-size: 18px;
+    }
+    button {
+        margin: 25px 0;
+    }
+
+}
+
+@media (max-width: 360px){
+     .circle-section-background-text-position {
+        bottom: 60px;
+    }
+    .circle-section-background-text-item {
+        font-size: 20px;
+    }
+    .circle-section-background-text {
+        font-size: 15px;
+    }
+}
