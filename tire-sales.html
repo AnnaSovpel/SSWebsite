@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bushing.css">
+    <title>Мобильная, аргонная сварка</title>
+</head>
+<header class="header-section">
+    <div class="header-section-margin">
+        <a href="./index.html" class="header-nav">Главная</a>
+        <div class="header-nav">Акции</div>
+        <div class="header-nav">Цены</div>
+        <div><img src="./img/sound.png" alt="No image" class="header-img"></div>
+    </div>
+</header>
+<div class="burger">
+    <span></span>
+    <div class="burger-container">
+        <div class="burger-cotainer-block burger-cotainer-block-table">
+            <a href="./index.html">Главная</a>
+            <a href="#">Акции</a>
+            <a href="#">Цены</a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="main-background">
+        <div class="main-opacity">
+            <div class="footer-section">
+                <div class="footer-section-phone">
+                    <a href="tel:+375257777702" class="footer-section-phone-a__padding">+375 (25) 777-77-02 (MTS)</a>
+                    <a href="tel:+375445876383 ">+375 (44) 587-63-83 (А1)</a>
+                </div>
+                <div class="footer-section-phone-phone__padding">г.Гомель, пр-т Октября, 23А (круглосуточно)</div>
+            </div>
+        </div>
+        <!-- СЕКЦИЯ С КРУГОМ -->
+        <div class="circle-section">
+            <div class="circle-section-flex">
+
+                <div class="circle-section-background">
+                    <div class="circle-sales-flex">
+                        <div class="circle-block-width"><img src="./img/services/wheel-sales.png" alt="No image"
+                                class="circle-img-width">
+                        </div>
+                    </div>
+
+                    <div class="circle-section-background-text-item-sales">ПОДБЕРЁМ ДЛЯ ВАС<br> <span
+                            class="circle-section-background-text-item-sales__big-size">бюджетные
+                            шины</span>
+                        <br>по хорошей цене
+                    </div>
+
+                    <div class="button-sales-flex-container">
+                        <button id="btn_modal_window" class="button-rolling">Записаться</button>
+                    </div>
+                    <div id="my_modal" class="modal">
+                        <div class="modal_content">
+                            <span class="close_modal_window">×</span>
+                            <form class="popup__form down" id="form" action="mail.php" method="POST">
+                                <div class="order">
+                                    <div class="modal-text-item">Остались вопросы?</div>
+                                    <div class="modal-text">Закажите обратный звонок, и наш консультант свяжется с
+                                        вами</div>
+                                    <form method="post" action="mail.php">
+                                        <!-- <div data-title="Например, Мария Петровна">Ваше имя: <input type='text' name='name'
+                                                                required /></div> -->
+                                        <div class="phone-flex-container">
+                                            <input class="phone-input tel" type="tel" name='tel' placeholder="+375"
+                                                required />
+                                            <input class="phone-input-call" type='submit' class="request"
+                                                value='Заказать звонок'>
+                                        </div>
+                                        <div id="text"></div>
+                                    </form>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="result_form"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class=" footer-section">
+            <div class="footer-section-phone">
+                <a href="tel:+375257777702" class="footer-section-phone-a__padding">+375 (25) 777-77-02 (MTS)</a>
+                <a href="tel:+375445876383 ">+375 (44) 587-63-83 (А1)</a>
+            </div>
+            <div class="footer-section-phone-phone__padding">г.Гомель, пр-т Октября, 23А (круглосуточно)
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./bushing.js"></script>
+</body>
+
+</html>

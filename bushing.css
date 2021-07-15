@@ -1,4 +1,8 @@
-/* THIS IS CSS FOR PAGES: BUSHING, ARGON-WELDING, UNSCREWING SECRETS*/
+/* THIS IS CSS FOR PAGES: BUSHING, ARGON-WELDING, UNSCREWING SECRETS, VULCANIZATION, ROLLING OUT THE EIGHT DISCS, TIRE SALES*/
+@font-face {
+    font-family: Intro Rust-Base-Line;
+    src: url(./ttf/IntroRust-BaseLine.otf);
+}
 .circle-section {
     height: 90vh; 
     background: rgba(255, 255, 255, 0.2);
@@ -32,6 +36,19 @@
 .wheel-1-secrets {
     background-image: url(./img/services/wheel-1-secrets.png);
 }
+.wheel-1-vulcan {
+    background-image: url(./img/services/wheel-1-vulcan.png);
+}
+.wheel-rolling {
+    background-image: url(./img/services/wheel-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:320px;
+    width: 320px;
+    position: relative;
+    left: 300px;
+    bottom: 0px;
+}
 .wheel-2 {
     background-image: url(./img/services/wheel-2.png);
     background-repeat: no-repeat;
@@ -47,6 +64,9 @@
 }
 .wheel-2-secrets {
     background-image: url(./img/services/wheel-2-secrets.png);
+}
+.wheel-2-vulcan {
+    background-image: url(./img/services/wheel-2-vulcan.png);
 }
 .wheel-3 {
     background-image: url(./img/services/wheel-3.png);
@@ -64,6 +84,9 @@
 .wheel-3-secrets {
     background-image: url(./img/services/wheel-3-secrets.png);
 }
+.wheel-3-vulcan {
+    background-image: url(./img/services/wheel-3-vulcan.png);
+}
 .circle-section-background-text-position {
     position: relative; 
     bottom: 850px;
@@ -77,6 +100,30 @@
     line-height: 140%;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+}
+.circle-section-background-text-item-rollling {
+    font-family: Intro Rust;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.circle-section-background-text-item-sales {
+    font-family: Intro Rust;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    bottom:-10px;
 }
 .circle-section-background-text {
     padding: 25px 0 0 140px;
@@ -108,8 +155,63 @@ button {
     cursor: pointer;
     border: none;
 }
+.button-rolling-flex-container {
+    display: flex; 
+    justify-content: center;
+}
+.button-sales-flex-container {
+    display: flex; 
+    justify-content: center;
+}
+.button-rolling {
+    margin: 25px 0 0 0;
+}
 button:hover {
     background: #ff5416cd;
+}
+.rolling-tabel-position {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+}
+.rolling-tabel-flex {
+    display: flex; 
+    width: 70%;
+}
+.roling-tabel-flex-big-cell {
+    border-top: 2px solid #FFFFFF; 
+    border-bottom: 2px solid #FFFFFF; 
+    border-left: 2px solid #FFFFFF; 
+    height: 50px; 
+    width:70%;
+    text-align: center;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+.roling-tabel-flex-small-cell {
+    width:30%;
+    border-right: 2px solid #FFFFFF; 
+}
+.circle-sales-flex {
+    display: flex; 
+    justify-content: center;
+}
+.circle-block-width {
+    margin-top: 10px;
+    height: 480px; 
+    width: 480px;
+}
+.circle-img-width {
+    width: 100%; 
+    height: 100%;
+}
+.circle-section-background-text-item-sales__big-size {
+    font-family: Intro Rust-Base-Line;
+    font-size: 50px;
 }
 /* MODAL WINDOW  */
 .modal {
@@ -272,6 +374,12 @@ button:hover {
         left: 330px;
         top: -55px;
     }
+    .wheel-rolling {
+        width: 220px;
+        height: 220px;
+        left: 140px;
+        top: -30px;
+    }
     .circle-section-background-text-position {
         position: relative; 
         bottom: 420px;
@@ -280,14 +388,42 @@ button:hover {
         padding-left: 100px;
         font-size: 20px;
     }
+    .circle-section-background-text-item-rollling {
+        position: relative;
+        bottom: 35px;
+        font-size: 15px;
+    }
     .circle-section-background-text {
         padding-left: 100px;
         font-size: 12px;    
     }
+
     button {
         margin: 10px 0 0 100px;
         width: 150px;
         height: 50px;
+    }
+    .button-rolling-flex-container {
+        position: relative;
+        bottom: 50px;
+    }
+    .rolling-tabel-position {
+        bottom: 35px;
+    }
+    .roling-tabel-flex-big-cell{
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+    }
+    .circle-block-width {
+        width: 220px;
+        height: 220px;
+    }
+    .circle-section-background-text-item-sales {
+        font-size: 25px;
+    }
+    .circle-section-background-text-item-sales__big-size {
+        font-size: 30px;
     }
 }
 @media (max-width: 860px){
@@ -330,7 +466,7 @@ button:hover {
         top: -75px;
     }
     .circle-section-background {
-         background: rgba(255, 255, 255, 0);
+        background: rgba(255, 255, 255, 0);
     }
     .wheel-1 {
         display: none;
@@ -341,6 +477,9 @@ button:hover {
     .wheel-3 {
         display: none;
     }
+    .wheel-rolling {
+        display: none;
+    }
     .circle-section-background-text-position {
         bottom: 0px;
     }
@@ -348,6 +487,7 @@ button:hover {
         padding: 0;
         font-size: 25px;
         color: black;
+        background-color:rgba(255, 255, 255, 0.392);
         width: 100%;
     }
     .circle-section-background-text {
@@ -355,9 +495,28 @@ button:hover {
         font-size: 18px;
         width: 100%;
         color: black;
+        background-color:rgba(255, 255, 255, 0.392);
+    }
+    .circle-section-background-text-item-sales {
+        color: black;
+        background-color:rgba(255, 255, 255, 0.392);
     }
     button {
         margin: 25px 0;
+    }
+    .circle-section-background-text-item-rollling {
+        font-size: 20px;
+        color: black;
+        background-color:rgba(255, 255, 255, 0.392);
+    }
+    .rolling-tabel-flex {
+        width: 100%;
+    }
+    .roling-tabel-flex-big-cell {
+        height: 65px;
+        line-height: 65px;
+        color: black;
+        background-color:rgba(255, 255, 255, 0.2);
     }
 }
 @media (max-width: 550px){
@@ -393,9 +552,19 @@ button:hover {
     button {
         margin: 25px 0;
     }
-
+    .circle-block-width {
+        position: relative;
+        bottom: 80px;
+    }
+    .circle-section-background-text-item-sales {
+        position: relative;
+        bottom: 80px;
+    }
+    .button-sales-flex-container {
+        position: relative;
+        bottom: 80px;
+    }
 }
-
 @media (max-width: 360px){
      .circle-section-background-text-position {
         bottom: 60px;
@@ -405,5 +574,21 @@ button:hover {
     }
     .circle-section-background-text {
         font-size: 15px;
+    }
+    .roling-tabel-flex-big-cell {
+        height: 50px;
+        line-height: 50px;
+    }
+    .circle-block-width {
+        position: relative;
+        bottom: 100px;
+    }
+    .circle-section-background-text-item-sales {
+        position: relative;
+        bottom: 100px;
+    }
+    .button-sales-flex-container {
+        position: relative;
+        bottom: 100px;
     }
 }
